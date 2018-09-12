@@ -24,7 +24,7 @@ is shipped to clients. This HTML elements can contains JavaScript expressions
 to be evaluated on the client. These are designated as *tilde* expressions.
 See the Hop syntax [documentation](http://localhost:8080/usr/local/share/doc/hop/3.2.0-pre1/00-syntax.html). They are regular JavaScript expressions
 that use syntactic marks to be distinguished from regular expressions.
-They start with `${` and with the closing curly bracket `}`.
+They start with `~{` and with the closing curly bracket `}`.
 
 *****************************************************************************
 #### Question 2 ####
@@ -47,16 +47,49 @@ empty HTML container inserted in the document and fill that container
 later on. This is traditionally implemented by designated the container
 with a known HTML identifier, obtaining that element from within a client
 side script, and modifying its content using an `innerHTML` assignement.
-This is the solution implemented in the service `clientDataAlt` of
+This is the solution implemented in the service `clientDateAlt` of
 the solution we propose.
 
-Hop alleviates this programming pattern by removing the need for
-creating explicit identifiers. Instead, the container can be created
-first on the server, inserted in the produced HTML document, and modified
-by the client side script. This is implemented in the `clientDateAltHop`
+
+Mixing Server Values and Client Values
+--------------------------------------
+
+In the previous we have seen that Hop expressions can be evaluated on
+the server or on the client. They can also been mixed as server-side
+values can be injected inside client-side expression using the regular
+JavaScript injection syntax. That is expressions used inside tilde
+expression that are enclosed between `${` and `}` are evaluated when
+the expression tilde expression is constructed. For instance,
+`~{clientX + ${serverX}}` will sum on the client the value of the
+client-side `clientX` variable and the value, the server side variable
+`serverX` contained when the tilde expression has been constructed.
+
+*****************************************************************************
+#### Question 3 ####
+
+Define a Hop service that create a web page that time interval ellapsed
+from the server response and the complemention of the browser rendering.
+(Use `Date.now()` to obtain the millisecond number since epoch.)
+*****************************************************************************
+
+of course, not only literals can be exchanged, compound data
+structures, and even HTML elements. This might be used to alleviate
+the recurrent pattern of questions 2, which consists in assigning an
+element identifier, obtaining that element using `getElementById` and
+modifying that element. Instead, the container can be created first on
+the server, inserted in the produced HTML document, and modified by
+the client side script. This is implemented in the `clientDateAltHop`
 service.
+
+*****************************************************************************
+#### Question 4 ####
+
+Re-implement the last service of Question 2 using this technique.
+*****************************************************************************
+
 
 
 *****************************************************************************
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
+
 
