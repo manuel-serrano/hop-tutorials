@@ -82,5 +82,5 @@ Hop is now ready for being used. In the next step we will write our first
 Hop program, for now, you can already check the pre-existing services
 by browsing the URL `http://localhost:8080/hop` (provided Hop is run with
 `hop.docker` or `hop.docker -p 8080`) or browse the Docker image disk
-with `http://localhost:8080/", or browse the Hop documentation located at:
+with `http://localhost:8080/`, or browse the Hop documentation located at:
 `http://localhost:8080/usr/local/share/doc/hop/3.2.0-pre1/index.html`.
