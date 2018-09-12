@@ -87,6 +87,46 @@ service.
 Re-implement the last service of Question 2 using this technique.
 *****************************************************************************
 
+Tilde expression can be used inside HTML body but also in HTML attribute,
+for instance on the `onclick` attribute of a button. Server side values
+can, of course, be injected in that tilde expression too.
+
+*****************************************************************************
+#### Question 5 ####
+
+Implement a service delivering a web page with a button that show pops up
+a window displaying the client date and the page generation date.
+*****************************************************************************
+
+Services and Multitier Programming
+----------------------------------
+
+In the previous step, we have seen how to define services and how to
+use them to generate URL. We will now invoke them from client side programs.
+`HopFrame` created by service invocation implement the `post` method
+that triggers the service body evaluation. The `post` method accepts
+two arguments. The first is a success callback, which is a function of
+one argument, the result of the call. The second is a failure callback,
+also a function of one argument, an error descriptor.
+
+*****************************************************************************
+#### Question 6 ####
+
+Implement a Hop service that creates a web page with one button that, each
+time pressed, show the round-trip time to the server and comeback.
+*****************************************************************************
+
+Hop services can receive arguments and return compound JavaScript object.
+
+*****************************************************************************
+#### Question 7 ####
+
+Implement a Hop service that creates a web page with one button. Each
+time clicked, it invokes a service with a JavaScript object with a
+unique identifier. That service returns a JavaScript object with two
+fields: the current request time and the last request time or -1 on the first
+visit. These results are displayed on the web page.
+*****************************************************************************
 
 
 *****************************************************************************
