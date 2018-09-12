@@ -1,7 +1,7 @@
 Hop Installation
 ================
 The Hop installation procedure is described from the
-Hop (homepage)[http://hop.inria.fr]. Select the `Download`
+Hop [homepage](http://hop.inria.fr). Select the `Download`
 tab and follows the "Docker installation" instructions .
 
 You will have to download two files:

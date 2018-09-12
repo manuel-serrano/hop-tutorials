@@ -15,7 +15,7 @@ to understand how to export bindings and how to import other modules.
 Implement the modules `bar` and `gee` such that executing the module `foo`
 defined as:
 
-```hopscript
+```javascript
 "use strict";
 
 const bar = require( "./bar.js" );
@@ -23,6 +23,7 @@ const gee = require( "./gee.js" );
 
 console.log( "x=", bar.x, gee( bar.f( bar.x ) ) );
 ```
+
 
 displays `x=10, gee=15`.
 -----------------------------------------------------------------------------
