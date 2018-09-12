@@ -87,7 +87,7 @@ service.
 Re-implement the last service of Question 2 using this technique.
 *****************************************************************************
 
-Tilde expression can be used inside HTML body but also in HTML attribute,
+Tilde expressions can be used inside HTML body but also in HTML attribute,
 for instance on the `onclick` attribute of a button. Server side values
 can, of course, be injected in that tilde expression too.
 
@@ -129,7 +129,4 @@ visit. These results are displayed on the web page.
 *****************************************************************************
 
 
-*****************************************************************************
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
-
-

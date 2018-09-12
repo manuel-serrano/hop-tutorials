@@ -69,8 +69,8 @@ body. Cut and past the result of your last service call (preceded with
 *****************************************************************************
 
 
-HTML
-----
+HTML Elements
+-------------
 
 HTML are regular Hop values. They can be declared using the genuine
 HTML syntax that can be inserted inline inside JavaScript. By default
@@ -82,7 +82,7 @@ HTML body are strings, with two escapes:
 
 
 *****************************************************************************
-### Question 2 ###
+#### Question 2 ####
 
 Define a Hop function `makeBox` that takes one argument and that
 returns an HTML `div` containing one `span` whose content is the value
@@ -112,6 +112,22 @@ TAG( { attr1: val1, attr2: "" }, node1, node2, ... )
   3. Modify the definition of makeBox so it can be used as any other HTML
 tag, export it and use it inside an HTML fragment from another module.
 *****************************************************************************
+
+
+HTML Documents
+--------------
+
+HTML documents refers to other resources, amongst which some are remote and
+some are located on the same host. The Hop services use abstract URL
+prefixed with `/hop` that do not refer to existing paths, so resources
+located on the same host as the main server cannot be designated using
+relative URLs. The simplest solution is to use the module name resolution
+to refer to a locate resource. For instance, if one application needs
+to serve an image located in the `img` directory of the source tree
+of the application, it may designate this image with an absolute path
+that can be obtained with `require.resolve( "./img/background.png" )`. Other
+means exist not to expose absolute resources but for simplicity this is
+the only method exposed in that tutorial.
 
 
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
