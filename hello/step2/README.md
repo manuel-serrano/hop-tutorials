@@ -114,5 +114,6 @@ tag, export it and use it inside an HTML fragment from another module.
 *****************************************************************************
 
 
-Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
-Continue to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/).
+- [x] [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
+- [x] [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
+- [ ] [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/).

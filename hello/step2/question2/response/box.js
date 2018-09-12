@@ -8,4 +8,4 @@ function MAKEBOX( attr, ... nodes ) {
    return makeBox( attr ? attr.class : false, nodes[ 0 ] );
 }
 
-exports.MAKEBOX;
+exports.MAKEBOX = MAKEBOX;
