@@ -1,5 +1,11 @@
-Hop Modules
-===========
+Hop Services and HTML
+=====================
+
+In this step, we will learn how to create Hop module, how to define
+services, and how to create HTML objects.
+
+Modules
+-------
 
 Hop Module are similar to Nodejs. In short, a module can export
 bindings and can import other modules. A module is stored in a single
@@ -8,8 +14,7 @@ system. Check the Nodejs
 [documentation](https://nodejs.org/dist/latest-v8.x/docs/api/modules.html)
 to understand how to export bindings and how to import other modules.
 
-
------------------------------------------------------------------------------
+*****************************************************************************
 ### Question 1 ###
 
 Implement the modules `bar` and `gee` such that executing the module `foo`
@@ -26,28 +31,28 @@ console.log( "x=", bar.x, gee( bar.f( bar.x ) ) );
 
 
 displays `x=10, gee=15`.
------------------------------------------------------------------------------
+*****************************************************************************
 
 
 Hop Services
-============
+------------
 
 Hop [services](http://localhost:8080/usr/local/share/doc/hop/3.2.0-pre1/index.html)
 are JavaScript function associated it URLs. They look all similar to
 functions but they are declared with the `service` keyword instead of
 `function`.
 
------------------------------------------------------------------------------
+*****************************************************************************
 ### Experiment 1 ###
 
 Create a Hop module that defines a service returning a string. Display
 the result of calling that service the display the result of the service
 call converted into a string using the `.toString()` method (use
 `console.log( .... )` to display the result).
------------------------------------------------------------------------------
+*****************************************************************************
 
 
------------------------------------------------------------------------------
+*****************************************************************************
 ### Experiment 2 ###
 
 Modify your service so that in now accepts one argument, displays
@@ -61,11 +66,11 @@ object. When converted into a string, a `HopFrame` produces the URL
 that is to be used to invoked that service, that is to evaluate its
 body. Cut and past the result of your last service call (preceded with
 `http://localhost:8080` as service constructed URLs are relative).
------------------------------------------------------------------------------
+*****************************************************************************
 
 
 HTML
-====
+----
 
 HTML are regular Hop values. They can be declared using the genuine
 HTML syntax that can be inserted inline inside JavaScript. By default
@@ -76,7 +81,7 @@ HTML body are strings, with two escapes:
  position of an HTML body or an HTML attribute value.
 
 
------------------------------------------------------------------------------
+*****************************************************************************
 ### Question 2 ###
 
 Define a Hop function `makeBox` that takes one argument and that
@@ -106,7 +111,8 @@ TAG( { attr1: val1, attr2: "" }, node1, node2, ... )
 
 Modify the definition of makeBox so it can be used as any other HTML
 tag, export it and use it inside an HTML fragment from another module.
------------------------------------------------------------------------------
+*****************************************************************************
+
 
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
 Continue to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/).

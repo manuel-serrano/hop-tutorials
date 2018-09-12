@@ -1,5 +1,10 @@
 Hop Installation
 ================
+
+This first step will help you getting started with Hop.
+
+Installation
+------------
 The Hop installation procedure is described from the
 Hop [homepage](http://hop.inria.fr). Select the `Download`
 tab and follows the "Docker installation" instructions .
@@ -13,7 +18,7 @@ You will have to download two files:
 
 
 Hop Configuration
-=================
+-----------------
 The Hop execution environment is a full-fledged Web server. As it potentially
 exposes all the resources the host has to offer, it is mandatory to
 restrict its usages before running application. This is the purpose of the
