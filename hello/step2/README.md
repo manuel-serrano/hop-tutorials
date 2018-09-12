@@ -89,10 +89,10 @@ returns an HTML `div` containing one `span` whose content is the value
 of the argument of the function. Define that function into a module
 called `box.js`.
 
-Modify the definition of `makeBox` so that the return `div` belongs to the
+  1. Modify the definition of `makeBox` so that the return `div` belongs to the
 HTML class `box`.
 
-Modify the definition of `makeBox` so that it accepts an optional parameter
+  2. Modify the definition of `makeBox` so that it accepts an optional parameter
 that, when passed, is concatenate to the `box` class.
 
 
@@ -109,7 +109,7 @@ is equivalent to
 TAG( { attr1: val1, attr2: "" }, node1, node2, ... )
 ```
 
-Modify the definition of makeBox so it can be used as any other HTML
+  3. Modify the definition of makeBox so it can be used as any other HTML
 tag, export it and use it inside an HTML fragment from another module.
 *****************************************************************************
 
