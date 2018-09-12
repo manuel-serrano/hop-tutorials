@@ -18,8 +18,6 @@ Implement a module with two services:
   1. `reqDate` that creates a web page showing the request date.
 *****************************************************************************
 
-Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
-
 A Hop program specifies the server behavior *and* the client behavior.
 The client part is described by the HTML document or HTML fragment that
 is shipped to clients. This HTML elements can contains JavaScript expressions
@@ -57,4 +55,8 @@ creating explicit identifiers. Instead, the container can be created
 first on the server, inserted in the produced HTML document, and modified
 by the client side script. This is implemented in the `clientDateAltHop`
 service.
+
+
+*****************************************************************************
+Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
 
