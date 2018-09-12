@@ -1,0 +1,9 @@
+{
+   "name": "hop-tutorial",
+   "version": "1.0.0",
+   "description": "A list of Hop tutorials",
+   "private": true,
+   "main": "lib/tutorials.js",
+   "homepage": "http://hop.inria.fr",
+   "engines": { "hop": ">=3.2.0" }
+}
