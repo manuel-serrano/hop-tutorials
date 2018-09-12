@@ -88,4 +88,4 @@ with `http://localhost:8080/`, or browse the Hop documentation located at:
 
 --------------------------------------------------------------------------
 
-Continue to (step2)[https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/].
+Continue to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
