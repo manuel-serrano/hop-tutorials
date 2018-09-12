@@ -161,7 +161,7 @@ the `require` forms inside a `<script defer>...</script>` element.
 #### Question 8 ####
 
 Implement a web page whose client-side code requires the module
-[drawimage.js](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/question8/image.js)
+[drawimage.js](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/question8/drawimage.js)
 that exports a function accepting two arguments, an image URL, a
 canvas, and an optional color map, which is an array of RGB color
 specification. For Instance, `drawImage` could be used as:
