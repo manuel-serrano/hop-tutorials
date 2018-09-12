@@ -38,7 +38,7 @@ functions but they are declared with the `service` keyword instead of
 `function`.
 
 -----------------------------------------------------------------------------
-### Experiment 1 ####
+### Experiment 1 ###
 
 Create a Hop module that defines a service returning a string. Display
 the result of calling that service the display the result of the service
@@ -48,7 +48,7 @@ call converted into a string using the `.toString()` method (use
 
 
 -----------------------------------------------------------------------------
-### Experiment 2 ####
+### Experiment 2 ###
 
 Modify your service so that in now accepts one argument, displays
 that argument, and returns the concatenation of the previous string and
@@ -77,7 +77,7 @@ HTML body are strings, with two escapes:
 
 
 -----------------------------------------------------------------------------
-### Question 2 ####
+### Question 2 ###
 
 Define a Hop function `makeBox` that takes one argument and that
 returns an HTML `div` containing one `span` whose content is the value
@@ -107,3 +107,6 @@ TAG( { attr1: val1, attr2: "" }, node1, node2, ... )
 Modify the definition of makeBox so it can be used as any other HTML
 tag, export it and use it inside an HTML fragment from another module.
 -----------------------------------------------------------------------------
+
+Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
+Continue to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/).
