@@ -114,21 +114,5 @@ tag, export it and use it inside an HTML fragment from another module.
 *****************************************************************************
 
 
-HTML Documents
---------------
-
-HTML documents refers to other resources, amongst which some are remote and
-some are located on the same host. The Hop services use abstract URL
-prefixed with `/hop` that do not refer to existing paths, so resources
-located on the same host as the main server cannot be designated using
-relative URLs. The simplest solution is to use the module name resolution
-to refer to a locate resource. For instance, if one application needs
-to serve an image located in the `img` directory of the source tree
-of the application, it may designate this image with an absolute path
-that can be obtained with `require.resolve( "./img/background.png" )`. Other
-means exist not to expose absolute resources but for simplicity this is
-the only method exposed in that tutorial.
-
-
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
 Continue to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/).

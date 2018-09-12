@@ -128,5 +128,56 @@ fields: the current request time and the last request time or -1 on the first
 visit. These results are displayed on the web page.
 *****************************************************************************
 
+HTML Documents
+--------------
+
+HTML documents refers to other resources, amongst which some are remote and
+some are located on the same host. The Hop services use abstract URL
+prefixed with `/hop` that do not refer to existing paths, so resources
+located on the same host as the main server cannot be designated using
+relative URLs. The simplest solution is to use the module name resolution
+to refer to a locate resource. For instance, if one application needs
+to serve an image located in the `img` directory of the source tree
+of the application, it may designate this image with an absolute path
+that can be obtained with `require.resolve( "./img/background.png" )`. Other
+means exist not to expose absolute resources but for simplicity this is
+the only method exposed in that tutorial.
+
+Hop modules are available on the server *and* on the client components
+of the application. That is, the form `require` is available to both
+server-side and client-side programming but additionally, client-side
+program must have loaded the file implementing the module with a prior
+`<script src=<path> lang="hopscript"/>` declarations. All
+implementation files must be provided explicitly and the file path
+used in the `require` form must match exactly those used in the
+corresponding `script>` tag.
+
+Client-side loading is asynchronous and but a client-side `require`
+can only be executed after the implementation has been loaded. The
+recommended way to ensure the correct execution times is to place
+the `require` forms inside a `<script defer>...</script>` element.
+
+*****************************************************************************
+#### Question 8 ####
+
+Implement a web page whose client-side code requires the module
+[drawimage.js](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step3/question8/image.js)
+that exports a function accepting two arguments, an image URL, a
+canvas, and an optional color map, which is an array of RGB color
+specification. For Instance, `drawImage` could be used as:
+
+```javascript
+var mycolors = [
+   {red: 252, green: 27, blue: 0},
+   {red: 125, green: 167, blue: 129},
+   {red: 255, green: 122, blue: 10}
+];
+
+drawImage( url, mycanvas, mycolors );
+```
+
+The web page should display
+the unmodified image and the modified one. The color
+*****************************************************************************
 
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
