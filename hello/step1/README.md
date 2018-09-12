@@ -1,13 +1,14 @@
 Hop Installation
 ================
 
-This first step will help you getting started with Hop.
+This first step will help you getting started with Hop. The procedure described
+here uses the Hop Docker distribution.
 
 Installation
 ------------
 The Hop installation procedure is described from the
 Hop [homepage](http://hop.inria.fr). Select the `Download`
-tab and follows the "Docker installation" instructions .
+tab and follow the "Docker installation" instructions .
 
 You will have to download two files:
 
@@ -51,7 +52,7 @@ authentications are associated with the Hop `anonymous` user. For
 this tutorial, let's grant full permission to the anonymous user.
 For that, modify its declaration with:
 
-```hopscript
+```javascript
 user.add( { name: 'anonymous', services: '*', directories: '*' } );
 ```
 
@@ -62,7 +63,7 @@ permissions. For instance, we can choose to grand `anonymous` full
 permissions only when Hop runs on a certain port. This can be achieved
 with:
 
-```hopscript
+```javascript
 if( hop.port === 8888 ) {
    // grant full permission when Hop runs on port 8888
    user.add( { name: 'anonymous', services: '*', directories: '*' } );
