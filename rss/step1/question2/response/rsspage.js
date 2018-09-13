@@ -1,6 +1,6 @@
 "use strict"
 
-service rssCon( url = "http://feeds.nytimes.com/nyt/rss/HomePage" ) {
+service rssCon( url = "http://feeds.guardian.co.uk/theguardian/rss" ) {
    const feed = require( url, "../../../feed" );
 
    return <html>
