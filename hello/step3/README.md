@@ -176,8 +176,8 @@ var mycolors = [
 drawImage( url, mycanvas, mycolors );
 ```
 
-The web page should display
-the unmodified image and the modified one. The color
+The web page should display the unmodified image and the modified one side
+by side.
 *****************************************************************************
 
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
