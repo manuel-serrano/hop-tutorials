@@ -92,6 +92,5 @@ with `http://localhost:8080/`, or browse the Hop documentation located at:
 `http://localhost:8080/usr/local/share/doc/hop/3.2.0-pre1/index.html`.
 
 
---------------------------------------------------------------------------
-
+**************************************************************************
 Continue to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
