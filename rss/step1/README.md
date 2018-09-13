@@ -23,16 +23,14 @@ objects. It is located in the
 directory. To use it form importing modules:
 
 ```javascript
-require( "https://www.lemonde.fr/rss/une.xml", "./feed" );
+require( "http://rss.slashdot.org/Slashdot/slashdotMain", "./feed" );
 ```
 
 *****************************************************************************
 #### Question 1 ####
 
 Implement a server-side only program that parses RSS feeds, displays
-the feed title, and that displays on the terminal the news titles. For
-the experiment you can use the following feeds:
-http://rss.slashdot.org/Slashdot/slashdotMain.
+the feed title, and that displays on the terminal the news titles.
 
 *****************************************************************************
 
