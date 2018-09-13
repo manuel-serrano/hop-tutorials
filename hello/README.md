@@ -7,6 +7,6 @@ how to implement basic services. The steps are as follows:
 
 **************************************************************************
 
-Start with [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step1/).
+Start with [step1](step1/).
 
 
