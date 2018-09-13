@@ -7,6 +7,5 @@ function rssCon( url ) {
    feed.items.forEach( i => console.log( " ", i.title[ 0 ] ) );
 }
 
-rssCon( "https://www.lemonde.fr/rss/une.xml" );
-console.log();
-rssCon( "http://feeds.nytimes.com/nyt/rss/HomePage" );
+rssCon( "http://rss.slashdot.org/Slashdot/slashdotMain" );
+rssCon( "https://www.techradar.com/rss/news/computing" );

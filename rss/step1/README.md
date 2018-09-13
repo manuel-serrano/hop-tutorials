@@ -20,7 +20,7 @@ such a compiler.  Here, we will simply use an already existing
 compiler that parses RSS feeds and that constructs JavaScript
 objects. It is located in the
 [feed](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/feed)
-directory. To use is from a Hop module, use:
+directory. To use it form importing modules:
 
 ```javascript
 require( "https://www.lemonde.fr/rss/une.xml", "./feed" );
@@ -32,10 +32,7 @@ require( "https://www.lemonde.fr/rss/une.xml", "./feed" );
 Implement a server-side only program that parses RSS feeds, displays
 the feed title, and that displays on the terminal the news titles. For
 the experiment you can use the following feeds:
-
-  * https://www.lemonde.fr/rss/une.xml
-  * http://feeds.nytimes.com/nyt/rss/HomePage
-  * http://ep00.epimg.net/rss/elpais/portada.xml
+http://rss.slashdot.org/Slashdot/slashdotMain.
 
 *****************************************************************************
 
