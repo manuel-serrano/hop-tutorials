@@ -1,10 +1,18 @@
-This tutorial shows how to design and implement a realistic web
-application. It also shows how to reuse web resources and how to
-development with a popular web framework.
+This tutorial shows how to design and implement an "almost realistic
+rss agregator". It will show the content of several configurable rss
+feeds. Each news will be displayed with a summary, an image when provided,
+and a link to the actual resource. The reader will also enable an
+automatic translation of the news summaries.
 
-  1. Installation: Build the Docker image, configuring the server.
-  2. Services and HTML: Create simple services.
-  3. Multitier: Create a first multitier application.
+To implementation this application we will use:
+
+  1. The extension Hop adds to the `require` form. This will be used
+ to "import" RSS feeds.
+  2. The ability Hop offers to call external services. This  will be used
+ to translate the news summaries.
+  3. HTML generation that can naturally cope with web frameworks
+ such as [bootstrap](https://getbootstrap.com/).
+
 
 **************************************************************************
 

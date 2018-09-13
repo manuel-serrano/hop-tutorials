@@ -5,7 +5,7 @@ This repository contains various Hop tutorials.
  simple Web applications.
   1. [rss](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/)
  the implementation of an RSS agregator. This tutorial shows how to design
- "realistic" web site using a mainstream web development framework. It shows
+ a "realistic" web site using a mainstream web development framework. It shows
  how to combine various web resources.
 
 
