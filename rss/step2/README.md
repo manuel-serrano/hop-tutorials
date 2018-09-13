@@ -13,5 +13,11 @@ Define the `btutil.js` Hop module that exports two functions: `HEAD`
 and `BODY`.  The former creates a HTML `head` section where the
 bootstrap declarations are automatically inserted. The latter create
 an HTML `body` whose nodes are included inside a `div` belonging to
-the class `container`.
+the class `container`. Test your module with the following program:
+
+```javascript
+const bt = require( "./btutils.js" );
+
+service testbt() {
+  return	
 *****************************************************************************
