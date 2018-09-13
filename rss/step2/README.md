@@ -44,6 +44,47 @@ service testbt( o ) {
 ```
 *****************************************************************************
 
+HSS
+---
+
+It is now time to add a little bit of graphical configuration. Hop HTML
+document can of course use CSS files but they can also use, so-called,
+HSS files that are CSS files into which `${...}` expressions can be
+evaluated. 
+
+*****************************************************************************
+#### Experiment 1 ####
+Modify `testbt.hs` to use the following `hss` file.
+
+```javascript
+${
+  var hop = require( "hop" );
+   var hss = require( hop.hss );
+
+   function nthColor( length, from, to, i ) {
+      var cfrom = hss.parseWebColor( from );
+      var cto = hss.parseWebColor( to );
+
+      var rs = (cto.red - cfrom.red) / (length - 1);
+      var gs = (cto.green - cfrom.green) / (length - 1);
+      var bs = (cto.blue - cfrom.blue) / (length - 1);
+
+      return hss.makeWebColor(
+	 Math.round( cfrom.red + (i * rs) ),
+	 Math.round( cfrom.green + (i * gs) ),
+	 Math.round( cfrom.blue + (i * bs) ) );
+   }
+}
+
+[href="link1"] { background-color: ${ nthColor( 4, "#ffd100", "#FF0000", 0 ) }; }
+[href="link2"] { background-color: ${ nthColor( 4, "#ffd100", "#FF0000", 1 ) }; }
+[href="link3"] { background-color: ${ nthColor( 4, "#ffd100", "#FF0000", 1 ) }; }
+[href="link4"] { background-color: ${ nthColor( 4, "#ffd100", "#FF0000", 1 ) }; }
+```
+
+*****************************************************************************
+
+
 *****************************************************************************
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step1/).
 Continue to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step3/).
