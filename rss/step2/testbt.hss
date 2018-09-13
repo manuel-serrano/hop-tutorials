@@ -1,5 +1,5 @@
 ${
-  var hop = require( "hop" );
+   var hop = require( "hop" );
    var hss = require( hop.hss );
 
    function nthColor( length, from, to, i ) {
