@@ -1,11 +1,11 @@
-RSS Feeds
-=========
+RSS Feed
+========
 
 In this first step, we will see how to parse RSS feed and extract
 relevant information.
 
-Parsing RSS feeds
------------------
+Parsing RSS feed
+----------------
 
 Hop extends the `require` function in two direction.
 
@@ -31,6 +31,19 @@ require( "http://rss.slashdot.org/Slashdot/slashdotMain", "./feed" );
 
 Implement a server-side only program that parses RSS feeds, displays
 the feed title, and that displays on the terminal the news titles.
+
+*****************************************************************************
+
+Rendering RSS feed
+------------------
+
+*****************************************************************************
+#### Question 2 ####
+
+Implement a Hop service that accepts as parameter an RSS URL and that
+displays the RSS title and that place each news in a separated box
+showing: the title, the new date, the summary, and, if present, the
+news image.
 
 *****************************************************************************
 
