@@ -40,6 +40,20 @@ be defined as:
 }
 ```
 
+Multi Feeds
+-----------
+
+*****************************************************************************
+#### Question 2 ####
+
+1. Modify the `rss.js` so that it displays the news of the first RSS feed
+declared in the configuration file.
+2. Modify the `rss.js` file so that the navigation bar shows all available
+ feeds.
+3. Modify your program so that clicking on a feed automatically shows
+ its content.
+ 
+
 *****************************************************************************
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step2/).
 Continue to [step4](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step4/).

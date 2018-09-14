@@ -1,6 +1,7 @@
 const bt = require( "../../../step2/question1/response/btutils.js" );
+const config = require( "../../question1/response/config.js" );
 
-service rss( url = "http://feeds.nytimes.com/nyt/rss/HomePage" ) {
+service rss( url = config.feeds[ 0 ].href ) {
    const stream = require( url, hop.feed );
    const title = stream.head.title;
 
@@ -10,12 +11,13 @@ service rss( url = "http://feeds.nytimes.com/nyt/rss/HomePage" ) {
      </bt.head>
    
      <bt.body>
-        <div class="nav-scroller py-1 mb-2">
+       <div class="nav-scroller py-1 mb-2">
          <nav class="nav d-flex justify-content-between">
-	   <a class="p-2 text-muted" href="link1">link1</a>
-	   <a class="p-2 text-muted" href="link2">link2</a>
-	   <a class="p-2 text-muted" href="link3">link3</a>
-	   <a class="p-2 text-muted" href="link4">link4</a>
+	     ${ config.feeds.map( f => {
+		return <a class="p-2 text-muted" href=${rss( f.href )}>
+		   ${f.name}
+		</a>
+	     } ) }
 	 </nav>
        </div>
        
