@@ -12,15 +12,15 @@ Translation
 
 With Hop, calling a third party service is almost as simple as calling
 a native Hop service. Third party services are created using the
-`hop.webService` constructor. Check the Hop [documentation] [hop]. We
-will use them to call the [mymemory] [mym] services that translate
+`hop.webService` constructor. Check the Hop [documentation][hop]. We
+will use them to call the [mymemory][mym] services that translate
 natural languages.
 
 *****************************************************************************
 Question 1
 
 1. Write a server-side that exports a function that translate a text. The
- translator should return a JavaScript [Promise] [mdn] that resolves
+ translator should return a JavaScript [Promise][mdn] that resolves
 with the translated text.
 2. Write a server-side only program that import the previous module
 and that translates a text it receives from command line.
