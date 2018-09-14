@@ -1,0 +1,12 @@
+{ "feeds": [
+   { "name": "Le Monde",
+     "href": "https://www.lemonde.fr/rss/une.xml" },
+   { "name": "Le Devoir",
+     "href": "http://feeds2.feedburner.com/fluxdudevoir" },
+   { "name": "New York Times",
+     "href": "http://feeds.nytimes.com/nyt/rss/HomePage" },
+   { "name": "The Guardian",
+     "href": "http://feeds.guardian.co.uk/theguardian/rss" },
+   { "name": "El Pais",
+     "href": "http://ep00.epimg.net/rss/elpais/portada.xml" } ] 
+}
