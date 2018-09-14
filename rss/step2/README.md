@@ -48,7 +48,7 @@ HSS
 ---
 
 It is now time to add a little bit of graphical configuration. Hop HTML
-document can of course use CSS files but they can also use, so-called,
+documents can of course use CSS files but they can also use, so-called,
 HSS files that are CSS files into which `${...}` expressions can be
 evaluated. 
 
@@ -83,6 +83,56 @@ ${
 ```
 
 *****************************************************************************
+
+RSS
+---
+
+We are now ready to use all our components for displaying the RSS feed
+content. First, let us the Feed main title, date, copyright
+information, and image, when the source provides one.
+
+*****************************************************************************
+#### Question 2 ####
+
+Copy our previous `testbt.js` file into `rss.js` and in the `jumbotron`
+dir element, add all the RSS pieces of information that you will find
+in the `head` property of the feed and that you may find interesting.
+
+In the solution we propose, we use the bootstrap grid rendering. It
+decomposes rows in 12 columns and it makes it easy to create elements
+that span over several columns.
+
+*****************************************************************************
+#### Question 3 ####
+
+We will now add the news to our page. To improve the graphical we will
+use Bootstrap cards, which can be constructed as:
+
+```html
+<div class="col-md-4 card-deck">
+  <div class="card mb-4 shadow-sm h-md-250">
+    <div class="card-header text-center">
+      <h4> news title </h4>
+    </div>
+    <div class="card-body d-flex flex-column align-items-start">
+      <div class="card-img-right flex-auto d-none d-lg-block">
+	    news image
+      </div>
+	 ${ <strong class="d-inline-block mb-2 text-primary"> news category </strong>
+	    <div class="mb-1 text-muted"> news date </div>
+	    news summary
+	    <a href="news continue URL">Continue reading</a>
+    </div>
+  </div>
+</div>
+```
+
+Download the [template](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step2/question3/card-template.js), and include it in your previous
+rss.js file. It might be a good idea to create a card constructor that will
+accept a news descriptor as argument and that will build a new card for
+that news.
+
+Use that function to display to all news of the feed. 
 
 
 *****************************************************************************

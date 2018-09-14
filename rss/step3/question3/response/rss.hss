@@ -1,0 +1,13 @@
+div.card-img-right img {
+   max-width: 100%;
+   height: auto;
+}
+div.image-head img {
+   max-width: 100%;
+   min-width: 50%;
+   height: auto;
+}
+p.card-text {
+   text-align: left;
+   width: 100%;
+}
