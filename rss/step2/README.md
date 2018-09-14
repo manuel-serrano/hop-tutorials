@@ -84,6 +84,24 @@ ${
 
 *****************************************************************************
 
+RSS
+---
+
+We are now ready to use all our components for displaying the RSS feed
+content. First, let us the Feed main title, date, copyright
+information, and image, when the source provides one.
+
+*****************************************************************************
+#### Question 2 ####
+
+Copy our previous `testbt.js` file into `rss.js` and in the `jumbotron`
+dir element, add all the RSS pieces of information that you will find
+in the `head` property of the feed and that you may find interesting.
+
+In the solution we propose, we use the bootstrap grid rendering. It
+decomposes rows in 12 columns and it makes it easy to create elements
+that span over several columns.
+
 
 *****************************************************************************
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step1/).
