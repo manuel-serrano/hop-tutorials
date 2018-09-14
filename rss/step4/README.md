@@ -12,17 +12,18 @@ Translation
 
 With Hop, calling a third party service is almost as simple as calling
 a native Hop service. Third party services are created using the
-`hop.webService` constructor. Check the Hop
-[documentation](http://hop-dev.inria.fr/home/00-hop.html). We will use
-them to call the [mymemory](http://mymemory.translated.net) services
-that translate natural languages.
+`hop.webService` constructor. Check the Hop [documentation] [hop]. We
+will use them to call the [mymemory] [mym] services that translate
+natural languages.
 
 *****************************************************************************
 Question 1
 
-Write a server-side only program that declares a function that implements
-a language translator. The text to be translated will be read from the
-command line.
+1. Write a server-side that exports a function that translate a text. The
+ translator should return a JavaScript [Promise] [mdn] that resolves
+with the translated text.
+2. Write a server-side only program that import the previous module
+and that translates a text it receives from command line.
 
 To pass arguments to Hop, use:
 
@@ -32,7 +33,16 @@ hop -- src.js arg arg ...
 
 The value of the first argument is to be obtained with `process.argv[ 2 ]`.
 
+
+Translating the News
+--------------------
+
+We will now connect 
 *****************************************************************************
 Return to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step3/).
 
+
+[hop]: http://hop-dev.inria.fr/home/00-hop.html
+[mym]: http://mymemory.translated.net
+[mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 
 
