@@ -48,7 +48,7 @@ HSS
 ---
 
 It is now time to add a little bit of graphical configuration. Hop HTML
-document can of course use CSS files but they can also use, so-called,
+documents can of course use CSS files but they can also use, so-called,
 HSS files that are CSS files into which `${...}` expressions can be
 evaluated. 
 
