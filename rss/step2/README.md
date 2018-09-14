@@ -102,6 +102,38 @@ In the solution we propose, we use the bootstrap grid rendering. It
 decomposes rows in 12 columns and it makes it easy to create elements
 that span over several columns.
 
+*****************************************************************************
+#### Question 3 ####
+
+We will now add the news to our page. To improve the graphical we will
+use Bootstrap cards, which can be constructed as:
+
+```html
+<div class="col-md-4 card-deck">
+  <div class="card mb-4 shadow-sm h-md-250">
+    <div class="card-header text-center">
+      <h4> news title </h4>
+    </div>
+    <div class="card-body d-flex flex-column align-items-start">
+      <div class="card-img-right flex-auto d-none d-lg-block">
+	    news image
+      </div>
+	 ${ <strong class="d-inline-block mb-2 text-primary"> news category </strong>
+	    <div class="mb-1 text-muted"> news date </div>
+	    news summary
+	    <a href="news continue URL">Continue reading</a>
+    </div>
+  </div>
+</div>
+```
+
+Download the [template](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step2/question3/card-template.js), and include it in your previous
+rss.js file. It might be a good idea to create a card constructor that will
+accept a news descriptor as argument and that will build a new card for
+that news.
+
+Use that function to display to all news of the feed. 
+
 
 *****************************************************************************
 Return to [step1](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step1/).
