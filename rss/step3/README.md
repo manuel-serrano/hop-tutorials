@@ -52,7 +52,25 @@ declared in the configuration file.
  feeds.
 3. Modify your program so that clicking on a feed automatically shows
  its content.
- 
+
+*****************************************************************************
+#### Question 3 ####
+
+Some RSS feeds include too lare picture or too large text bodies. This can
+be fixed by using an approprioate HSS file. To restrict that size of an image
+so that it is scale to fit its container width, use:
+
+```
+image {
+   max-wdith: 100%;
+   height: auto;
+```
+
+For the text, it is enough to declare that its width is 100%. 
+
+Add a `rss.hss` file used by `hss.js` to configure these graphical
+elements.
+
 
 *****************************************************************************
 Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step2/).
