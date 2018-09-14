@@ -32,12 +32,34 @@ hop -- src.js arg arg ...
 ```
 
 The value of the first argument is to be obtained with `process.argv[ 2 ]`.
+*****************************************************************************
 
+
+Adding a drop down menu to the news
+-----------------------------------
+
+
+*****************************************************************************
+Question 2
+
+1. Extend the configuration file with an additional array of language
+codes (two letters code) that denotes the languages available to translation.
+2. 
+*****************************************************************************
 
 Translating the News
 --------------------
 
-We will now connect 
+We will now use the `translate.js` function to translate news. 
+
+*****************************************************************************
+Question 3
+
+Modify the implementation of the
+*****************************************************************************
+
+
+
 *****************************************************************************
 Return to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step3/).
 
