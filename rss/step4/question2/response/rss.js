@@ -1,5 +1,5 @@
 const bt = require( "../../../step2/question1/response/btutils.js" );
-const config = require( "../../question1/response/config.js" );
+const config = require( "./config.js" );
 
 service rss( url = config.feeds[ 0 ].href ) {
    const stream = require( url, hop.feed );
@@ -63,7 +63,7 @@ function feed( e ) {
 	    <div class="mb-1 text-muted"> ${ e.date }</div>
 	    ${ summaryel }
 	    <a href=${e.links.alternate.href}>Continue reading</a>
-	    <transbutton el=${summaryel} lang=${lang} q=${summary.toString()}/>
+	    <transbutton/>
        </div>
      </div>
    </div>
@@ -89,10 +89,7 @@ function TRANSBUTTON( attrs, ... nodes ) {
            translate
        </button>
        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-	 ${ config.languages.map(
-	    l => 
-	    <span class="dropdown-item"> ${l}
-	    </span> ) }
+	 ${ config.languages.map( l => <span class="dropdown-item"> ${l} </span> ) }
        </div>
      </div>
    </div>

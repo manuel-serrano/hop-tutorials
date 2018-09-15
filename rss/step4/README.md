@@ -17,7 +17,7 @@ will use them to call the [mymemory][mym] services that translate
 natural languages.
 
 *****************************************************************************
-Question 1
+#### Question 1 #### 
 
 1. Write a server-side that exports a function that translate a text. The
  translator should return a JavaScript [Promise][mdn] that resolves
@@ -46,7 +46,7 @@ be translated into different natural langages that are specified in
 the user configuration file.
 
 *****************************************************************************
-Question 2
+#### Question 2 ####
 
 1. Extend the configuration file with an additional array of language
 codes (two letters
@@ -54,7 +54,22 @@ codes (two letters
 that denotes the languages available to translation.
 2. Check the bootstrap [dropdown documentation](https://getbootstrap.com/docs/4.1/components/dropdowns/) and change your `rss.js` module to add a dropdown
 button with the list of configured languages. For that, creates a new
-HTML tag named `transbutton` and use that new tag in your program.
+HTML tag named `transbutton` and use that new tag in your program. 
+*****************************************************************************
+
+*****************************************************************************
+#### Question 3 #### 
+
+Let's make some refactoring for clarity. 
+
+1. Define a `dropdown` tag that you add to the `btutils.js` module.
+  a. Pass the dropdown label as an attribute.
+  b. Pass the languages as children nodes. Each language in a different
+`span` element. You will notice that Hop's argument flattening is not
+smart enough to package children nodes correctly. Hence, you will have to
+filter the arguments explicitly.
+2. Use that new function to cleanup `rss.js`.
+
 *****************************************************************************
 
 Translating the News
