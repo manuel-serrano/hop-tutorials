@@ -83,10 +83,22 @@ We will now use the `translate.js` function to translate news.
 It is now time to complete our RSS multi-lingual, multi-feed
 reader. 
 
-  1. Modify the `rss.js` file of Question 3, to call the
-translation function of Question 1, and to change the content of the
-summary when the translation succeeds.
-  2. Add another button next to the translation to restore the original
+  1. Most RSS feed declare their language. Whem present, this information 
+is to be found in the `stream.head.language` property. Modify `rss.js` so
+that when the language is declared filter it out to extract the ISO 639
+code. When the declaration is abstent, we will assume the English language.
+Pass that language information to the `feed` function that builds the
+feed graphical element.
+  2. In Question 1, we have prepared a translation function. As client code
+ are not allowed (*) to randomly request third party services, we will use
+ the Hop server as a proxy to the remote MyMemory services. Modify the `trans.js`
+ module to turn the function `translate` into a service.
+  3. Modify the `rss.js` file of Question 3, to call the
+translation service with the source language (question 4.1) and the 
+target language. 
+  4. Check the result of the translation, on success, update the News
+display.
+  5. Add another button next to the translation to restore the original
 summary.  
 *****************************************************************************
 
