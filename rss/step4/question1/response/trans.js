@@ -1,6 +1,6 @@
 "use strict"
 
-const translate = require( ".translate.js" );
+const translate = require( "./translate.js" );
 
 if( process.argv.length < 2 ) {
    console.error( 'usage: trans.js "text"' );

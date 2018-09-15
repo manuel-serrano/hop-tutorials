@@ -64,6 +64,7 @@ so that it is scale to fit its container width, use:
 image {
    max-wdith: 100%;
    height: auto;
+}
 ```
 
 For the text, it is enough to declare that its width is 100%. 

@@ -78,11 +78,17 @@ Translating the News
 We will now use the `translate.js` function to translate news. 
 
 *****************************************************************************
-Question 3
+#### Question 4 ####
 
-Modify the implementation of the
+It is now time to complete our RSS multi-lingual, multi-feed
+reader. 
+
+  1. Modify the `rss.js` file of Question 3, to call the
+translation function of Question 1, and to change the content of the
+summary when the translation succeeds.
+  2. Add another button next to the translation to restore the original
+summary.  
 *****************************************************************************
-
 
 
 *****************************************************************************
