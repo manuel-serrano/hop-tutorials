@@ -25,26 +25,36 @@ with the translated text.
 2. Write a server-side only program that import the previous module
 and that translates a text it receives from command line.
 
-To pass arguments to Hop, use:
+This documentation [page](http://hop-dev.inria.fr/home/00-command.html) 
+explains how to invoke Hop from the command line. In short, to pass
+arguments to a Hop JavaScript program, use:
 
 ```shell
 hop -- src.js arg arg ...
 ```
 
-The value of the first argument is to be obtained with `process.argv[ 2 ]`.
+The value of the first argument following `src.js` is to be obtained
+with `process.argv[ 2 ]`.
 *****************************************************************************
 
 
 Adding a drop down menu to the news
 -----------------------------------
 
+We will now add a dropdown menu to each news so that its summary could
+be translated into different natural langages that are specified in 
+the user configuration file.
 
 *****************************************************************************
 Question 2
 
 1. Extend the configuration file with an additional array of language
-codes (two letters code) that denotes the languages available to translation.
-2. 
+codes (two letters
+[ISO-639](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)code)
+that denotes the languages available to translation.
+2. Check the bootstrap [dropdown documentation](https://getbootstrap.com/docs/4.1/components/dropdowns/) and change your `rss.js` module to add a dropdown
+button with the list of configured languages. For that, creates a new
+HTML tag named `transbutton` and use that new tag in your program.
 *****************************************************************************
 
 Translating the News
