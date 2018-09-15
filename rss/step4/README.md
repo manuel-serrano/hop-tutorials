@@ -57,7 +57,6 @@ button with the list of configured languages. For that, creates a new
 HTML tag named `transbutton` and use that new tag in your program. 
 *****************************************************************************
 
-*****************************************************************************
 #### Question 3 #### 
 
 Let's make some refactoring for clarity. 
@@ -100,8 +99,6 @@ target language.
 display.
   5. Add another button next to the translation to restore the original
 summary.  
-*****************************************************************************
-
 
 *****************************************************************************
 Return to [step3](https://github.com/manuel-serrano/hop-tutorials/tree/master/rss/step3/).

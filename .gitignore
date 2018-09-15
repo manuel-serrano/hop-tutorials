@@ -1,0 +1,21 @@
+# Build directories
+/bin/
+/lib/
+/work/
+/tmp/
+/private/
+
+# Object files
+*.o
+**/o/
+**/.libs/
+
+# Env dev
+*.afile
+*.jfile
+*.etags
+*.mco
+*~
+
+
+
