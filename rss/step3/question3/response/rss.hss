@@ -7,7 +7,7 @@ div.image-head img {
    min-width: 50%;
    height: auto;
 }
-p.card-text {
+.card-text {
    text-align: left;
    width: 100%;
 }
