@@ -14,7 +14,7 @@ and `BODY`.  The former creates a HTML `head` section where the
 bootstrap declarations are automatically inserted. The latter create
 an HTML `body` whose nodes are included inside a `div` belonging to
 the class `container`. Test your module with the following
-[program](:
+[program](https://raw.githubusercontent.com/manuel-serrano/hop-tutorials/master/rss/step2/question1/testbt.js):
 
 ```javascript
 const bt = require( "./response/btutils.js" );
@@ -50,7 +50,7 @@ HSS
 It is now time to add a little bit of graphical configuration. Hop HTML
 documents can of course use CSS files but they can also use, so-called,
 HSS files that are CSS files into which `${...}` expressions can be
-evaluated. 
+evaluated (see [HSS](http://hop-dev.inria.fr/home/hss.html)). 
 
 *****************************************************************************
 #### Experiment 1 ####

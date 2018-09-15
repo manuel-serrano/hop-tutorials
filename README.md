@@ -1,3 +1,5 @@
+<link id='link346' href='favicon.ico' rel='shortcut icon'>
+
 This repository contains various Hop tutorials.
 
   1. [hello](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/)
