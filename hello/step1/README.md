@@ -17,7 +17,6 @@ You will have to download two files:
   - `hop.docker`, a shell wrapper that is used to invoke Hop within docker
  as simply as possible. 
 
-
 Hop Configuration
 -----------------
 The Hop execution environment is a full-fledged Web server. As it potentially
@@ -91,6 +90,13 @@ by browsing the URL `http://localhost:8080/hop` (provided Hop is run with
 with `http://localhost:8080/`, or browse the Hop documentation located at:
 `http://localhost:8080/usr/local/share/doc/hop/3.2.0-pre1/index.html`.
 
+
+Finally, you may find useful to copy the Emacs mode on your disk. It can be
+obtained with:
+
+```shell
+$ docker cp hop:/usr/local/share/site-lisp/hopjs.el
+```
 
 **************************************************************************
 Continue to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/hello/step2/).
