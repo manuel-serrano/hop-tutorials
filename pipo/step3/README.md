@@ -28,3 +28,30 @@ Add a method `padMove` to games that handles pad move. That method
 must keep track of the position of the two pads as this will be needed
 for computing the ball trajectory. Modify the `padMove` service to
 use that method.
+
+
+*****************************************************************************
+#### Question 3 ####
+
+We will now complete the client side implementation. 
+
+ 1. Modify the client initialization to add a `click` listener for the
+ second player joining the game. The the user click, the game should start.
+ For that the service `startGame` should be called. This is the server that
+ we spawn the ball.
+ 2. The game cannot start before two players are connected. In the client
+ side initialization function, add a call to the service `clientReady`
+ that keeps track of connected player. When the game is ready to start
+ the ball should be visible at the middle of the screen.
+ 
+*****************************************************************************
+#### Question 4 ####
+
+
+*****************************************************************************
+Return to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/pipo/step2/).
+
+
+
+ 
+
