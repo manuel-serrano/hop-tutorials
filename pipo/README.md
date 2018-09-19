@@ -6,7 +6,7 @@ clients when the ball moves.
 The tutorial is decomposed in three steps.
 
   1. Implement the basic graphical parts.
-  2. Handle two pads moves.
+  2. Handle the two pads moves.
   3. Add the Ping Pong ball and game management.
 
 
