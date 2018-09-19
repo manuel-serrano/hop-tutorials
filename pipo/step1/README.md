@@ -25,9 +25,6 @@ The whole application will be decomposed in three files.
   3. `game.js`: the server side handling of a game.
 
 
-The Main Service
-----------------
-
 Each client side web page will be composed of a simple HTML canvas into
 which the playground, the net, the ball, and the balls will be drawn.
 

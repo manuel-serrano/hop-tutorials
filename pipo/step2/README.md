@@ -11,7 +11,7 @@ informed that the other pad has moved.
 
 Informaing the server of local pad move will be implemented using
 regular services. Server notifications will be implemented using
-server [broadcast] [http://hop-dev.inria.fr/home/00-hop.html#broadcast].
+server [broadcast][http://hop-dev.inria.fr/home/00-hop.html#broadcast].
 
 *****************************************************************************
 #### Question 1 ####
