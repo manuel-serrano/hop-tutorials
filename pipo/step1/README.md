@@ -79,13 +79,13 @@ graphical elements.
 Update the `client.js` to add two methods:
 
   1. `drawBall`, that displays a ball in the canvas. The argument of the
-  function will be a JavaScript object with three fields:
-   * `x` and `y`: the coordinates of the center of the ball.
-   * `radius`: the radius of the ball.
+function will be a JavaScript object with three fields:
+    * `x` and `y`: the coordinates of the center of the ball.
+    * `radius`: the radius of the ball.
   2. `drawPad`, that displays a pad. It receives as argument a JavaScript object
-  with four fields:
-   * `x` and `y`: the top left corner of the pad.
-   * `width` and `height`: the pad width and height.
+with four fields:
+    * `x` and `y`: the top left corner of the pad.
+    * `width` and `height`: the pad width and height.
 
 *****************************************************************************
 
