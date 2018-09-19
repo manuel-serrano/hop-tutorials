@@ -39,11 +39,9 @@ Game.prototype.startGame = function startGame() {
    
    this.started = true;
    const intv = setInterval( e => {
-      // move the ball
       ball.x += this.dx;
       ball.y += this.dy;
       
-      // direction adjustement
       if( ball.x < pads.left.x + pads.left.width ) {
 	 if( ball.x <= 0 ) {
 	    console.log( "game " + o.id + " over" );
@@ -70,7 +68,6 @@ Game.prototype.startGame = function startGame() {
 	 this.dy = -this.dy;
       }
 
-      // broadcast the new ball position
       hop.broadcast( this.id, ball );
    }, this.speed );
 }

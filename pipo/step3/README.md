@@ -29,7 +29,6 @@ must keep track of the position of the two pads as this will be needed
 for computing the ball trajectory. Modify the `padMove` service to
 use that method.
 
-
 *****************************************************************************
 #### Question 3 ####
 
@@ -46,6 +45,22 @@ We will now complete the client side implementation.
  
 *****************************************************************************
 #### Question 4 ####
+
+To complete the game implementation we have to animate the ball and to 
+handle bouncing against the walls and the pads.
+
+To animate the ball we will use a JavaScript interval 
+(see [mdn](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) that calls a function regularly. Each time the function
+is called, the new position of the ball will be computed and broadcast
+to the two players. When the game is over because the ball has passed one
+of the two pads, the interval should be cleared.
+
+In our solution, when the ball hits a wall, it keeps its speed but the
+vertical direction is reversed. When the ball hits a pad, its horizontal
+direction is changed and its vertical direction is computed according to
+the location of the hit on the pad.
+
+Implement the `startGame` method.
 
 
 *****************************************************************************
