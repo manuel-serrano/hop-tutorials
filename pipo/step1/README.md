@@ -69,5 +69,46 @@ presentation of the canvas API.
 Implement the `repaint` function and draw a net, a simple thick line,
 in the playground.
 
+*****************************************************************************
+
+#### Question 4 ####
+
+Let's implement the other functions we will need to display the other
+graphical elements.
+
+Update the `client.js` to add two methods:
+
+  1. `drawBall`, that displays a ball in the canvas. The argument of the
+  function will be a JavaScript object with three fields:
+    * `x` and `y`: the coordinates of the center of the ball.
+	* `radius`: the radius of the ball.
+  2. `drawPad`, that displays a pad. It receives as argument a JavaScript object
+  with four fields:
+    * `x` and `y`: the top left corner of the pad.
+	* `width` and `height`: the pad width and height.
+
+*****************************************************************************
+
+#### Question 5 ####
+
+Let's animate the player pad. 
+
+From now on, the player pad will be stored in the `Pme` client side variable.
+It will be updated when the mouse moves and it will be passed to the `drawPad`
+function.
+
+To get the mouse position, a listener must be associated to the `mousemove`
+event. When triggered, that listener will be invoked with an event descriptor
+whose properties `clientX` and `clientY` will be the mouse absolute position
+in the page. To get the mouse position relative to the canvas, the 
+absolute positions, denoted by the two canvas properties `offsetTop` and
+`offsetLeft`, should be subtracted. Note that for the game, we only care for 
+the mouse vertical position.
+
+  1. Implement the `updatePadPosition` and modify the `repaint` function to
+redisplay the user pad.
+  2. Define a global variable for representing the ball and modify `repaint`
+  to draw it on the canvas.
+  
 **************************************************************************
 Continue to [step2](https://github.com/manuel-serrano/hop-tutorials/tree/master/pipo/step2/).
