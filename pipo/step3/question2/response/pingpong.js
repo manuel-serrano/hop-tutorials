@@ -1,5 +1,7 @@
 "use strict";
 
+const Game = require( "./game.js" );
+
 let gameCnt = -1;
 let games = [];
 
@@ -39,4 +41,6 @@ service pingpong( o ) {
 }
 
 service padMove( id, padid, P ) {
+   if( id < games.length ) games[ id ].padMove( padid, P );
 }
+
