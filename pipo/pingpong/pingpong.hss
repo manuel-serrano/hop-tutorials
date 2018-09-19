@@ -1,0 +1,4 @@
+canvas {
+  background-color: #333;
+  border: 4px ridge #700;
+}
