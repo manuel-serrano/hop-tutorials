@@ -49,7 +49,6 @@ Create a Hop module that defines a service returning a string. Display
 the result of calling that service the display the result of the service
 call converted into a string using the `.toString()` method (use
 `console.log( .... )` to display the result).
-*****************************************************************************
 
 
 *****************************************************************************

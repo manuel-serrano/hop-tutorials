@@ -7,7 +7,7 @@ here uses the Hop Docker distribution.
 Installation
 ------------
 The Hop installation procedure is described from the
-Hop [homepage](http://hop.inria.fr). Select the `Download`
+Hop [homepage](http://hop-dev.inria.fr). Select the `Download`
 tab and follow the "Docker installation" instructions .
 
 You will have to download two files:
