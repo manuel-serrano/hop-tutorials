@@ -1,9 +1,6 @@
 "use strict";
 
-service padMove();
-
-let Pme = { x: 0, y: 0, width: 10, height: 80 };
-let Pother = { x: 0, y: 0, width: 10, height: 80 };
+let Pme = { x: 5, y: 0, width: 10, height: 80 };
 let Ball = { x: -10, y: -10, radius: 0 };
 
 let Can;
@@ -30,7 +27,6 @@ function repaint() {
 
    drawNet();
    drawPad( Pme );
-   drawPad( Pother );
    drawBall( Ball );
    
    window.requestAnimationFrame( repaint );
@@ -52,23 +48,8 @@ exports.init = function( canvas, id, meid, otherid ) {
    Can.ctx = Can.getContext( "2d" );
    Can.hwidth = Can.width / 2;
    
-   // field side
-   if( meid > otherid ) {
-      Pme.x = Can.width - Pme.width - 5;
-      Pother.x = 5;
-      
-      Can.addEventListener( "click", e => {
-	 startGame( id ).post();
-      } );
-   } else {
-      Pme.x = 5;
-      Pother.x = Can.width - Pother.width - 5;
-   }
-   
-   // event listeners
    Can.addEventListener( "mousemove", e => {
       updatePadPosition( e );
-      padMove( id, meid, Pme ).post( e => undefined );
    } );
    
    repaint();

@@ -1,8 +1,6 @@
 "use strict";
 
 service padMove();
-service startGame();
-service clientReady();
 
 let Pme = { x: 0, y: 0, width: 10, height: 80 };
 let Pother = { x: 0, y: 0, width: 10, height: 80 };
@@ -33,6 +31,7 @@ function repaint() {
    drawNet();
    drawPad( Pme );
    drawPad( Pother );
+   drawBall( Ball );
    
    window.requestAnimationFrame( repaint );
 }
@@ -57,16 +56,16 @@ exports.init = function( canvas, id, meid, otherid ) {
    if( meid > otherid ) {
       Pme.x = Can.width - Pme.width - 5;
       Pother.x = 5;
+      
+      Can.addEventListener( "click", e => {
+	 startGame( id ).post();
+      } );
    } else {
       Pme.x = 5;
       Pother.x = Can.width - Pother.width - 5;
    }
    
    // event listeners
-   server.addEventListener( otherid, e => {
-      Pother = e.value;
-   } );
-   
    Can.addEventListener( "mousemove", e => {
       updatePadPosition( e );
       padMove( id, meid, Pme ).post( e => undefined );
