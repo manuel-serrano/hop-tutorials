@@ -51,8 +51,3 @@ service startGame( id ) {
 service padMove( id, padid, P ) {
    if( id < games.length ) games[ id ].padMove( padid, P );
 }
-
-
-		
-		
-      

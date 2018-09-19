@@ -54,7 +54,6 @@ exports.init = function( canvas, id, meid, otherid ) {
    Can.ctx = Can.getContext( "2d" );
    Can.hwidth = Can.width / 2;
    
-   // field side
    if( meid > otherid ) {
       Pme.x = Can.width - Pme.width - 5;
       Pother.x = 5;
@@ -67,7 +66,6 @@ exports.init = function( canvas, id, meid, otherid ) {
       Pother.x = Can.width - Pother.width - 5;
    }
    
-   // event listeners
    server.addEventListener( otherid, e => {
       Pother = e.value;
    } );
