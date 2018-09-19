@@ -8,8 +8,8 @@ This repository contains various Hop tutorials.
  a "realistic" web site using a mainstream web development framework. It shows
  how to combine various web resources.
   3. [pipo](https://github.com/manuel-serrano/hop-tutorials/tree/master/pipo/)
- the implementation of a distributed ping pong game. This tutorial uses 
- extensively services and server broadcast.
+ the implementation of a distributed Ping Pong game. This tutorial uses 
+ services and server broadcast extensively.
 
 
 *Note*: These tutorials assume Hop version 3.2.0 or later.
