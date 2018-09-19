@@ -46,8 +46,8 @@ We will now complete the client side implementation.
 *****************************************************************************
 #### Question 4 ####
 
-To complete the game implementation we have to animate the ball and to 
-handle bouncing against the walls and the pads.
+To complete the game implementation we still have to animate the ball
+and to handle bouncing against the walls and the pads.
 
 To animate the ball we will use a JavaScript interval 
 (see [mdn](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) that calls a function regularly. Each time the function
