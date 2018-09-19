@@ -16,18 +16,20 @@ server [broadcast] [http://hop-dev.inria.fr/home/00-hop.html#broadcast].
 *****************************************************************************
 #### Question 1 ####
 
-The `pingpong` service of the server will now have to handle games. Several
-games might be running simultaneously.
+The `pingpong` service will now handle games. Several games
+might be running simultaneously.
 
  1. Modify the `pingpong` implementation so that it keeps track of all
-the running games. In the solution we propose, we willuse a global counter
+the running games. In the solution we propose, we use a global counter
 `gameCnt` to count the number of running games and a global array
-`games` to store the games.
+`games` to store all games.
  2. Modify the `client.js` and `pingpong.js` modules to implement a
 service called `padMov` that is invoked each time a pad is moved.
 
 *****************************************************************************
 #### Question 2 ####
 
-Implement the server `padMove` that should notify the client that
+ 1. Implement the server `padMove` that should notify the client that
 the other pad moved.
+ 2. Implement the client part that waits for server pad notification
+and update the `repaint` function to update the other pad.

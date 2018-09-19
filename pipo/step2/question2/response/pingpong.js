@@ -1,5 +1,5 @@
 "use strict";
 
-service padMove( id, padid, P ) {
+service padMove( id, padid, pad ) {
    hop.broadcast( padid, pad );
 }
