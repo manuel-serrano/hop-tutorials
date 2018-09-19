@@ -54,13 +54,13 @@ refreshed. To register the callback, use the browser function
 `window.requestAnimationFrame`.  Before returning, the callback must
 call `window.requestAnimationFrame` to register itself to the next
 repaint. See [mdn animation]
-[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations]
+(https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations)
 for more details.
 
 The simplest way to display a animation consists in first clearing the
 canvas using the `clearRect` method and then draw each element one by one.
 Check the [mdn canvas] 
-[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API] for a complete
+(https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) for a complete
 presentation of the canvas API. 
 
 Implement the `repaint` function and draw a net, a simple thick line,
