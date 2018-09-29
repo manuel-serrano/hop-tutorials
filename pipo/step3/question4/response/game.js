@@ -44,7 +44,7 @@ Game.prototype.startGame = function startGame() {
       
       if( ball.x < pads.left.x + pads.left.width ) {
 	 if( ball.x <= 0 ) {
-	    console.log( "game " + o.id + " over" );
+	    console.log( "game " + this.id + " over" );
 	    clearInterval( intv );
 	 } else {
 	    if( pads.left.y <= ball.y && pads.left.y + pads.left.height >= ball.y ) {
@@ -53,7 +53,7 @@ Game.prototype.startGame = function startGame() {
 	 }
       } else if( ball.x > pads.right.x ) {
 	 if( ball.x >= width ) {
-	    console.log( "game " + o.id + " over" );
+	    console.log( "game " + this.id + " over" );
 	    clearInterval( intv );
 	 } else {
 	    if( pads.right.y <= ball.y && pads.right.y + pads.right.height >= ball.y ) {
