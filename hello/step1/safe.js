@@ -1,5 +1,6 @@
 // generated file, Hop Wizard Wed, 12 Sep 2018 11:41:00 +0200
-var user = require( hop.user )
+const user = require( hop.user )
+const cfg = require( hop.config );
 
 // server configuration
 cfg.httpAuthenticationMethod = "digest";
